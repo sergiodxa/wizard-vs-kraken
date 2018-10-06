@@ -1,14 +1,5 @@
 {
   "alias": "wizard-vs-kraken.now.sh",
   "name": "wizard-vs-kraken",
-  "type": "docker",
-  "features": {
-    "cloud": "v2"
-  },
-  "scale": {
-    "sfo": { "min": 0, "max": "auto" },
-    "bru": { "min": 0, "max": "auto"},
-    "gru": { "min": 0, "max": "auto"},
-    "iad": { "min": 0, "max": "auto"}
-  }
+  "type": "static"
 }
