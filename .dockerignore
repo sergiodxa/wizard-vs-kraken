@@ -1,0 +1,7 @@
+*
+!components
+!lib
+!pages
+!static
+!package.json
+!yarn.lock
