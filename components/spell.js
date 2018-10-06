@@ -1,8 +1,6 @@
 import { connect } from "react-redux";
 import { canCastSpell } from "../lib/selectors";
 
-const emptyHandler = () => {}
-
 function Spell({ spell, cast, canCast }) {
   return (
     <div onClick={() => canCast && cast()} className={!canCast ? 'disabled' : ''}>
@@ -19,7 +17,10 @@ function Spell({ spell, cast, canCast }) {
           background: rgba(255, 255, 255, 0.25);
         }
         .disabled {
-          cursor: block;
+          cursor: not-allowed;
+        }
+        .disabled:hover {
+          background: rgba(255, 255, 255, 0.125);
         }
       `}</style>
     </div>
