@@ -1,8 +1,11 @@
+import compose from "compose-function";
 import App, { Container } from "next/app";
-import Head from "next/head";
-import React from "react";
-import withReduxStore from "../lib/with-redux";
 import { Provider } from "react-redux";
+import Router from "next/router";
+import Head from "next/head";
+import withGA from "next-ga";
+
+import withReduxStore from "../lib/with-redux";
 
 class MyApp extends App {
   render() {
@@ -28,4 +31,7 @@ class MyApp extends App {
   }
 }
 
-export default withReduxStore(MyApp);
+export default compose(
+  withReduxStore,
+  withGA("UA-48432002-10", Router)
+)(MyApp);
