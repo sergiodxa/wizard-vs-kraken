@@ -44,11 +44,11 @@ class HomePage extends Component {
       canWinWithMissile
     } = this.props;
 
-    const halfLife = playerLife <= bossLife / 2;
-
     if (bossLife <= 0 || playerLife <= 0) {
       return this.setState({ auto: false });
     }
+
+    const halfLife = playerLife <= bossLife / 2;
 
     if (canWinWithMissile) {
       return this.props.dispatch({
@@ -195,6 +195,7 @@ export default connect(state => ({
   canCastShield: canCastSpell(state, shield.cost),
   canCastRecharge: canCastSpell(state, recharge.cost),
   canCastPoison: canCastSpell(state, poison.cost),
+  history: state.get('history'),
   canWinWithMissile: (() => {
     const bossLife = state.getIn(["boss", "life"]);
     const bossDamage = state.getIn(["boss", "damage"]);
@@ -202,7 +203,7 @@ export default connect(state => ({
     const playerMana = state.getIn(["player", "mana"]);
     const missileCount = Math.ceil(playerMana / magicMissile.cost);
     return (
-      (bossDamage * missileCount) < playerLife &&
+      bossDamage * missileCount < playerLife &&
       magicMissile.damage * missileCount >= bossLife
     );
   })()
