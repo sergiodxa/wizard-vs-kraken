@@ -9,6 +9,7 @@
     "test": "NODE_ENV=test jest"
   },
   "dependencies": {
+    "compose-function": "^3.0.3",
     "immutable": "^3.8.2",
     "next": "^7.0.1",
     "react": "^16.5.2",
