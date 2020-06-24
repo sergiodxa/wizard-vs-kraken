@@ -2220,7 +2220,7 @@ debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.1.0, debug@^4.1.1:
+debug@^4.0.0, debug@^4.1.0, debug@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
   dependencies:
@@ -4214,11 +4214,11 @@ neo-async@^2.5.0:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.2.tgz#489105ce7bc54e709d736b195f82135048c50fcc"
 
-next-ga@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/next-ga/-/next-ga-2.3.1.tgz#a3c26fad0aeb73e1db978c37f6eb93586a0836bd"
+next-ga@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/next-ga/-/next-ga-2.3.4.tgz#0bec23e7c2eea35485af0b342e7794bbbdb61d04"
   dependencies:
-    debug "^3.1.0"
+    debug "^4.0.0"
     react-ga "^2.5.3"
 
 next@^7.0.1:
