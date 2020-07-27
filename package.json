@@ -16,7 +16,7 @@
     "next-ga": "^2.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-redux": "^7.2.0",
+    "react-redux": "^7.2.1",
     "redux": "^4.0.5"
   },
   "devDependencies": {
