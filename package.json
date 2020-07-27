@@ -12,7 +12,7 @@
   "dependencies": {
     "compose-function": "^3.0.3",
     "immutable": "^3.8.2",
-    "next": "^9.4.4",
+    "next": "^9.5.0",
     "next-ga": "^2.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
